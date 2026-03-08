@@ -316,13 +316,6 @@ h2 {
   object-fit: cover;
 }
 
-.visual-gps {
-  background:
-    linear-gradient(90deg, transparent 49%, color-mix(in oklch, var(--line), transparent 25%) 50%, transparent 51%),
-    linear-gradient(0deg, transparent 49%, color-mix(in oklch, var(--line), transparent 25%) 50%, transparent 51%);
-  background-size: 24px 24px;
-}
-
 .project-copy {
   padding: 1rem;
   display: grid;
