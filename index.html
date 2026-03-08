@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyle | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio showcasing featured systems, embedded, and web engineering projects."
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="frame"></div>
+    <header class="topbar">
+      <a class="brand" href="#main-content">kyle.dev</a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#featured">Featured</a>
+        <a href="#academic">School</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section reveal">
+        <p class="eyebrow">Software + Embedded Portfolio</p>
+        <h1>Relevant projects for teams building practical systems.</h1>
+        <p class="lead">
+          I build low-level firmware, system simulators, and Python web tools with
+          a bias for clean architecture and observable behavior.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#featured">View Featured Work</a>
+          <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+        </div>
+      </section>
+
+      <section id="about" class="about section reveal">
+        <h2>About</h2>
+        <p>
+          I am a computer science student focused on building practical systems and
+          taking ownership of real engineering problems. During my internship as the
+          sole programmer on a wind tunnel project, I collaborated with mechanical
+          engineers, delivered solutions in C and Python, and learned LabVIEW
+          independently under tight constraints.
+        </p>
+        <p>
+          Outside class, I keep building: from a 6502 homebrew computer with
+          assembly-level software to flight-computer work in Western’s Rocketry Club.
+          I enjoy low-level systems, debugging complex behavior, and turning ideas
+          into reliable software.
+        </p>
+      </section>
+
+      <section id="featured" class="section reveal">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="featured-grid">
+          <article class="featured-card">
+            <div class="project-visual visual-image">
+              <img src="./assets/images/6502-features.webp" alt="6502 monitor project screenshot" width="1597" height="900" loading="eager" decoding="async" />
+            </div>
+            <div class="project-copy">
+              <div class="chip-row">
+                <span class="badge featured">Featured</span>
+                <span class="tag">Assembly</span>
+                <span class="tag">Python</span>
+                <span class="tag">Emulation</span>
+              </div>
+              <h3>6502 Project</h3>
+              <p>
+                Low-level monitor ROM workflow combining 6502 assembly, injector
+                tooling, and simulation scripts for reproducible debugging.
+              </p>
+              <a href="https://github.com/kmoore1616" target="_blank" rel="noreferrer">View Source</a>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <div class="project-visual visual-gps" aria-hidden="true">
+              <span>ROUTE</span>
+              <span>MAP</span>
+              <span>ADMIN</span>
+            </div>
+            <div class="project-copy">
+              <div class="chip-row">
+                <span class="badge featured">Featured</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Python</span>
+              </div>
+              <h3>Gunnison GPS Tour</h3>
+              <p>
+                Flask + SQLite tour platform with route/polyline integration and
+                clear admin/user views for content and map flow.
+              </p>
+              <a href="https://github.com/kmoore1616" target="_blank" rel="noreferrer">View Source</a>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <div class="project-visual visual-image">
+              <img src="./assets/images/clock-features.webp" alt="STM8 clock firmware screenshot" width="1597" height="900" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-copy">
+              <div class="chip-row">
+                <span class="badge featured">Featured</span>
+                <span class="tag">C</span>
+                <span class="tag">Embedded</span>
+                <span class="tag">Firmware</span>
+              </div>
+              <h3>STM8 Clock Firmware</h3>
+              <p>
+                Interrupt-driven embedded clock/alarm firmware integrating GPIO and
+                LCD logic for resource-constrained microcontroller targets.
+              </p>
+              <a href="https://github.com/kmoore1616" target="_blank" rel="noreferrer">View Source</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section reveal">
+        <h2>Education</h2>
+        <p>B.S. Computer Science, Minor in Mathematics</p>
+        <p>Western Colorado University | Expected May 2026</p>
+        <p>Primary Program of Study GPA: 3.62</p>
+      </section>
+
+      <section id="academic" class="section reveal">
+        <div class="section-head">
+          <h2>School Projects</h2>
+        </div>
+        <div class="mini-grid">
+          <article class="mini-card">
+            <span class="badge academic">Academic</span>
+            <h3>VanBus AC Heartbeat</h3>
+            <p>ESP32 telemetry over MQTT with reconnect and diagnostics.</p>
+            <p class="stack">Embedded, C++, MQTT</p>
+            <a href="https://github.com/kmoore1616/VanBus" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+          <article class="mini-card">
+            <span class="badge academic">Academic</span>
+            <h3>RISC-V Single-Cycle Simulator</h3>
+            <p>Fetch/decode/execute model with register-state tracking.</p>
+            <p class="stack">C, Computer Architecture</p>
+            <a href="https://github.com/kmoore1616/coursework/tree/main/cs-330/hw4" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+          <article class="mini-card">
+            <span class="badge academic">Academic</span>
+            <h3>RISC-V Pipeline Simulator</h3>
+            <p>5-stage pipeline behavior with explicit stage-state structs.</p>
+            <p class="stack">C, Pipeline Modeling</p>
+            <a href="https://github.com/kmoore1616/coursework/tree/main/cs-330/hw5" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+          <article class="mini-card">
+            <span class="badge academic">Academic</span>
+            <h3>Set-Associative Cache Simulator</h3>
+            <p>Configurable cache with LRU, hit/miss stats, and latency.</p>
+            <p class="stack">C, Systems</p>
+            <a href="https://github.com/kmoore1616/coursework/tree/main/cs-330/hw8" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+          <article class="mini-card">
+            <span class="badge academic">Academic</span>
+            <h3>myTar Archive Utility</h3>
+            <p>POSIX C archiver/extractor with custom .mtar format handling.</p>
+            <p class="stack">C, POSIX</p>
+            <a href="https://github.com/kmoore1616/coursework/tree/main/cs-370/hw4/turnin" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+          <article class="mini-card">
+            <span class="badge academic">Academic</span>
+            <h3>Multi-Client TCP Server/Client</h3>
+            <p>Threaded TCP request/response with signal-driven shutdown.</p>
+            <p class="stack">C, Networking</p>
+            <a href="https://github.com/kmoore1616/coursework/tree/main/cs-370/hw15" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+          <article class="mini-card">
+            <span class="badge academic">Academic</span>
+            <h3>Flask Stock Portfolio Tracker</h3>
+            <p>Account-based tracking app with SQLAlchemy and sessions.</p>
+            <p class="stack">Python, Flask, SQLAlchemy</p>
+            <a href="https://github.com/kmoore1616/coursework/tree/main/cs-250/final" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+          <article class="mini-card">
+            <span class="badge academic">Academic</span>
+            <h3>Image Upload + Gallery Service</h3>
+            <p>JPEG ingest endpoint with timestamped persistence and gallery.</p>
+            <p class="stack">Python, Flask</p>
+            <a href="https://github.com/kmoore1616/coursework/tree/main/cs-497/HW5" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+        <p>
+          Interested in discussing firmware, systems, or backend engineering
+          roles? Reach out directly.
+        </p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:kyle.moore2221@gmail.com">kyle.moore2221@gmail.com</a>
+          <a class="btn btn-ghost" href="https://github.com/kmoore1616" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/moore-kyle-r/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+        <p class="location">Located in Colorado</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><span id="year"></span> Kyle. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
